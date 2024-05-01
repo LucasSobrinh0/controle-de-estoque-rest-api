@@ -24,7 +24,12 @@ Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em 
 
 git clone https://github.com/LucasSobrinh0/controle-de-estoque-rest-api.git
 
-2. Instale as dependências:
+2. Crie um ambiente virtual e instale as dependências:
+
+python -m venv env
+
+env\Script\activate (Ativa o ambiente virtual no windows)
+source env/bin/activate (Atiba o ambiente virtual no linux e no mac)
 
 pip install -r requirements.txt
 
@@ -39,6 +44,8 @@ python manage.py migrate
 python manage.py createsuperuser
 
 5. Rode o servidor:
+
+cd /controle_estoque/
 
 python manage.py runserver
 
