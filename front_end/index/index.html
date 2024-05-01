@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            /* Adjust width as necessary */
+            max-width: 600px;
+            /* Maximum width */
+        }
+
+        .produto-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .detalhes span {
+            display: block;
+            /* Makes each detail appear on a new line */
+            margin: 5px 0;
+        }
+
+        .acoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="../login/auth.js"></script>
+    <script src="../login/fetch-wrapper.js"></script>
+    <h1>Produtos</h1>
+    <a href="../cadastrar_produtos/cadastrar_produtos.html">CADASTRAR</a>
+    <button id="logoutButton">Logout</button>
+    <ul id="lista-produtos"></ul>
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function () {
+            localStorage.removeItem('jwt');  // Remove o token JWT do localStorage
+            window.location.href = '../login/login.html';  // Redireciona para a página de login
+        });
+    </script>
+</body>
+
+</html>
