@@ -6,7 +6,7 @@ Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em 
 
 ## Layout
 
-![Layout](./img/layout.png)
+![Layout](./img/layout.gif)
 
 ## Tecnologias Usadas
 
