@@ -13,7 +13,7 @@ Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em 
 - Python
 - Django
 - Rest Framework
-- JTW (Token de autenticação)
+- JWT (Token de autenticação)
 - JavaScript
 - HTML
 - CSS
